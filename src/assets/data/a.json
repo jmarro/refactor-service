@@ -1,0 +1,36 @@
+{
+  "avisos":[
+    {
+      "id": 1,
+      "name": "john",
+      "surname": "doe",
+      "city": "madrid",
+      "age": 25,
+      "color": "green",
+      "job":"doctor",
+      "address":{
+        "street": "calle lorca",
+        "number": 32,
+        "floor": 1,
+        "door": "A",
+        "cp": 18112
+      }
+    },
+    {
+      "id": 2,
+      "name": "mary",
+      "surname": "bis",
+      "city": "barcelona",
+      "age": 22,
+      "color": "blue",
+      "job":"teacher",
+      "address":{
+        "street": "avenida blu",
+        "number": 10,
+        "floor": 3,
+        "door": "C",
+        "cp": 18343
+      }
+    }
+  ]
+}

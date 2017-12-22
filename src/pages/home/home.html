@@ -7,8 +7,12 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-card tappable *ngFor="let aviso of avisosService.avisos" (click)="selectAviso(aviso)">
+    <ion-label >{{aviso.name}}</ion-label>
+    <ion-label>{{aviso.surname}}</ion-label>
+    <ion-label>{{aviso.age}}</ion-label>
+    <ion-label>{{aviso.city}}</ion-label>
+    <ion-label>{{aviso.job}}</ion-label>
+    <ion-label>{{aviso.color}}</ion-label>
+  </ion-card>
 </ion-content>

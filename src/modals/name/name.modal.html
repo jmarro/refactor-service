@@ -1,0 +1,39 @@
+<ion-header mode="md" no-border>
+  <ion-toolbar mode="md">
+    <ion-title mode="md" text-uppercase>Nombre</ion-title>
+    <ion-buttons right>
+      <button ion-button icon-only clear padding-right (click)="dismiss()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content no-bounce no-auto-scroll padding>
+  <ion-list>
+
+    <ion-item>
+      <ion-label fixed>Nombre</ion-label>
+      <ion-input type="text" [(ngModel)]="selectedService.live.name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Apellido</ion-label>
+      <ion-input type="text" [(ngModel)]="selectedService.live.surname"></ion-input>
+    </ion-item>
+
+  </ion-list>
+  <ion-grid padding class="modal-footer">
+    <ion-row justify-content-end>
+      <ion-col col-4>
+        <button large ion-button block (click)="dismiss()" color="secondary" text-uppercase>
+          Cancelar
+        </button>
+      </ion-col>
+      <ion-col col-4>
+        <button large ion-button block (click)="accept()" color="secondary" text-uppercase>
+          Aceptar
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

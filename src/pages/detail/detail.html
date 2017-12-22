@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{selectedService.live.name}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-label>{{selectedService.live.name}} {{selectedService.live.surname}}</ion-label>
+    <button ion-button (click)="name()" text-uppercase>
+      Change name
+    </button>
+    <ion-label>{{selectedService.live.address.street}} {{selectedService.live.address.number}}, {{selectedService.live.address.floor}} {{selectedService.live.address.door}} ({{selectedService.live.address.cp}})</ion-label>
+    <button ion-button (click)="address()" text-uppercase>
+      Change address
+    </button>
+    <ion-label>{{selectedService.live.age}}</ion-label>
+    <ion-label>{{selectedService.live.color}}</ion-label>
+
+</ion-content>
